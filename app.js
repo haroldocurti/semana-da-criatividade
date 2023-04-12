@@ -42,7 +42,6 @@ const prompts = [
   ]
 
 const randomNumber = ()=>Math.floor(Math.random() * 40);
-
 const span = document.querySelector("#randomText");
 span.textContent = prompts[randomNumber()];
 document.getElementById("resetBt").addEventListener("click",()=>{span.textContent = prompts[randomNumber()];})
