@@ -41,11 +41,11 @@ const prompts = [
     "Crie algo inspirado em um sonho que você teve."
   ]
 
-let randomNumber = Math.floor(Math.random() * 40);
+const randomNumber = ()=>Math.floor(Math.random() * 40);
 
 const span = document.querySelector("#randomText");
-span.textContent = prompts[randomNumber];
-
+span.textContent = prompts[randomNumber()];
+document.getElementById("resetBt").addEventListener("click",()=>{span.textContent = prompts[randomNumber()];})
 
 
 
